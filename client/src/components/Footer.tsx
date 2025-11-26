@@ -1,5 +1,5 @@
 export function Footer() {
-  const whatsappNumber = "01142965661";
+  const whatsappNumber = "+2001142965661";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
   
   const partners = [

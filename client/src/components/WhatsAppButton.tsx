@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "01142965661";
+  const whatsappNumber = "+2001142965661";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (

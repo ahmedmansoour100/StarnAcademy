@@ -213,7 +213,7 @@ export default function Contact() {
                 أو تواصل معنا مباشرة عبر الواتساب
               </p>
               <a
-                href="https://wa.me/01142965661"
+                href="https://wa.me/+2001142965661"
                 target="_blank"
                 rel="noopener noreferrer"
               >
