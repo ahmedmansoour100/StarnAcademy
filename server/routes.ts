@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertEnrollmentSchema, insertContactSchema } from "@shared/schema";
+import { appendEnrollmentToSheet } from "./googleSheets";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -12,6 +13,19 @@ export async function registerRoutes(
     try {
       const validatedData = insertEnrollmentSchema.parse(req.body);
       const enrollment = await storage.createEnrollment(validatedData);
+      
+      // Send to Google Sheets
+      await appendEnrollmentToSheet({
+        childName: validatedData.childName,
+        childAge: validatedData.childAge,
+        schoolType: validatedData.schoolType,
+        location: validatedData.location,
+        parentName: validatedData.parentName,
+        parentPhone: validatedData.parentPhone,
+        course: validatedData.course,
+        preferredSchedule: validatedData.preferredSchedule
+      });
+      
       res.status(201).json(enrollment);
     } catch (error) {
       console.error("Error creating enrollment:", error);
