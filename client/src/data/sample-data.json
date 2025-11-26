@@ -2,123 +2,103 @@
   "projects": [
     {
       "id": 1,
-      "studentName": "محمد أحمد",
-      "age": 12,
-      "parentName": "أحمد علي",
-      "title": "روبوت تنظيف البيئة",
-      "description": "روبوت ذكي يستخدم مستشعرات لتحديد القمامة وجمعها تلقائيًا.",
-      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop",
-      "category": "Robotics"
-    },
-    {
-      "id": 2,
-      "studentName": "سارة محمود",
-      "age": 10,
-      "parentName": "محمود حسن",
-      "title": "لعبة المغامرة الفضائية",
-      "description": "لعبة برمجت باستخدام Scratch تعلم الأطفال معلومات عن الكواكب.",
-      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
-      "category": "Game Dev"
-    },
-    {
-      "id": 3,
-      "studentName": "يوسف كريم",
-      "age": 14,
-      "parentName": "كريم عادل",
-      "title": "تطبيق تتبع المصروفات",
-      "description": "تطبيق موبايل يساعد الأطفال على إدارة مصروفهم الشخصي.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+      "studentName": "رودينا السيد نصار",
+      "age": 16,
+      "parentName": "أحمد نصار",
+      "title": "تطبيق موبايل",
+      "description": "تطبيق موبايل متقدم يجمع بين واجهة مستخدم جذابة وقوة البرمجة.",
+      "image": "https://images.unsplash.com/photo-1512941691920-25bda36dc643?q=80&w=800&auto=format&fit=crop",
       "category": "App Dev"
     },
     {
+      "id": 2,
+      "studentName": "عصام ماهر",
+      "age": 16,
+      "parentName": "عصام عبدالله ماهر",
+      "title": "نظام صيدلية",
+      "description": "نظام إدارة صيدلية كامل يتضمن إدارة المخزون والمبيعات والعملاء.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
+      "category": "Web Dev"
+    },
+    {
+      "id": 3,
+      "studentName": "محمد عصام ماهر",
+      "age": 17,
+      "parentName": "عصام عبدالله ماهر",
+      "title": "مشروع AI لتعليم الأطفال",
+      "description": "منصة تعليمية تستخدم الذكاء الاصطناعي مثل Scratch لتعليم الأطفال البرمجة بطريقة تفاعلية.",
+      "image": "https://images.unsplash.com/photo-1677442d019cecf8d19b8e96a3019eaf?q=80&w=800&auto=format&fit=crop",
+      "category": "AI/ML"
+    },
+    {
       "id": 4,
-      "studentName": "ليلى عمر",
+      "studentName": "محمد محمود الليبي",
       "age": 11,
-      "parentName": "عمر خالد",
-      "title": "قصة تفاعلية: رحلة إلى الماضي",
-      "description": "قصة رقمية تفاعلية تعلم التاريخ بطريقة ممتعة.",
-      "image": "https://images.unsplash.com/photo-1614741118868-607c31c88548?q=80&w=800&auto=format&fit=crop",
-      "category": "Digital Art"
+      "parentName": "محمود الليبي",
+      "title": "لعبة",
+      "description": "لعبة تفاعلية مشوقة تجمع بين المتعة والتعليم.",
+      "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=800&auto=format&fit=crop",
+      "category": "Game Dev"
     },
     {
       "id": 5,
-      "studentName": "عمر فاروق",
-      "age": 13,
-      "parentName": "فاروق سعيد",
-      "title": "نظام ري ذكي",
-      "description": "مشروع IoT يقيس رطوبة التربة ويسقي النباتات عند الحاجة.",
-      "image": "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=800&auto=format&fit=crop",
-      "category": "IoT"
+      "studentName": "خالد نافع",
+      "age": 16,
+      "parentName": "حنان",
+      "title": "تطبيق موبايل متقدم",
+      "description": "تطبيق موبايل احترافي يوفر حلولاً عملية لمشاكل يومية.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop",
+      "category": "App Dev"
     },
     {
       "id": 6,
-      "studentName": "جنى مصطفى",
+      "studentName": "مريم نافع",
       "age": 9,
-      "parentName": "مصطفى كمال",
-      "title": "بيانو الفواكه",
-      "description": "استخدام Makey Makey لتحويل الفواكه إلى آلة موسيقية.",
-      "image": "https://images.unsplash.com/photo-1516280440614-6697288d5d38?q=80&w=800&auto=format&fit=crop",
-      "category": "Electronics"
+      "parentName": "حنان",
+      "title": "شات بوت ذكي",
+      "description": "بوت محادثة يستخدم معالجة اللغة الطبيعية للإجابة على الأسئلة.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+      "category": "AI/ML"
     },
     {
       "id": 7,
-      "studentName": "محمد محمود الليبي",
-      "age": 15,
-      "parentName": "محمود الليبي",
-      "title": "موقع للمدرسة الذكية",
-      "description": "منصة ويب متكاملة لإدارة جداول الحصص والواجبات المدرسية.",
-      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop",
-      "category": "Web Dev"
+      "studentName": "ياسين أحمد حسن",
+      "age": 9,
+      "parentName": "أحمد حسن",
+      "title": "لعبة Flappy Bird",
+      "description": "نسخة مشروع من لعبة Flappy Bird تم برمجتها من الصفر باستخدام Python.",
+      "image": "https://images.unsplash.com/photo-1538481143235-8d798e965a11?q=80&w=800&auto=format&fit=crop",
+      "category": "Game Dev"
     },
     {
       "id": 8,
-      "studentName": "نور الدين",
-      "age": 12,
-      "parentName": "الدين محمد",
-      "title": "سيارة تتبع الخط",
-      "description": "سيارة روبوتية تتبع مسارًا مرسومًا بدقة عالية.",
-      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop",
-      "category": "Robotics"
+      "studentName": "عمر السحالي",
+      "age": 7,
+      "parentName": "محمد السحالي",
+      "title": "لعبة شبيهة بـ Super Mario",
+      "description": "لعبة منصات كلاسيكية مستوحاة من Super Mario برمجت على Scratch.",
+      "image": "https://images.unsplash.com/photo-1559633879-e74bcb59eab0?q=80&w=800&auto=format&fit=crop",
+      "category": "Game Dev"
     },
     {
       "id": 9,
-      "studentName": "آدم سامي",
-      "age": 10,
-      "parentName": "سامي يوسف",
-      "title": "لعبة الذاكرة",
-      "description": "لعبة بايثون تعتمد على الذاكرة وسرعة البديهة.",
-      "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop",
-      "category": "Python"
+      "studentName": "حمزة السحالي",
+      "age": 7,
+      "parentName": "محمد السحالي",
+      "title": "لعبة Super Mario",
+      "description": "لعبة مغامرات مشوقة مستوحاة من الألعاب الكلاسيكية.",
+      "image": "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?q=80&w=800&auto=format&fit=crop",
+      "category": "Game Dev"
     },
     {
       "id": 10,
-      "studentName": "هنا طارق",
-      "age": 11,
-      "parentName": "طارق حسين",
-      "title": "تصميم ثلاثي الأبعاد لمدينة المستقبل",
-      "description": "نموذج 3D لمدينة تعتمد على الطاقة النظيفة.",
-      "image": "https://images.unsplash.com/photo-1506443432602-c0935d6919ed?q=80&w=800&auto=format&fit=crop",
-      "category": "3D Design"
-    },
-    {
-      "id": 11,
-      "studentName": "حمزة وليد",
-      "age": 13,
-      "parentName": "وليد نصر",
-      "title": "تطبيق الطقس",
-      "description": "تطبيق يعرض حالة الطقس الحالية والتوقعات باستخدام API.",
-      "image": "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=800&auto=format&fit=crop",
-      "category": "Web Dev"
-    },
-    {
-      "id": 12,
-      "studentName": "مريم إيهاب",
-      "age": 14,
-      "parentName": "إيهاب توفيق",
-      "title": "نظام أمان منزلي",
-      "description": "نظام إنذار بسيط باستخدام الأردوينو وحساسات الحركة.",
-      "image": "https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=800&auto=format&fit=crop",
-      "category": "Electronics"
+      "studentName": "سليم عباس الفولي",
+      "age": 6,
+      "parentName": "آلاء عمر",
+      "title": "لعبة قط وفار على Scratch",
+      "description": "لعبة تفاعلية بسيطة وممتعة حيث يتحكم الطفل بقطة تصطاد الفئران.",
+      "image": "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?q=80&w=800&auto=format&fit=crop",
+      "category": "Game Dev"
     }
   ],
   "testimonials": [
