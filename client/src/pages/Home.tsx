@@ -40,12 +40,12 @@ export default function Home() {
   ];
 
   const learningOutcomes = [
-    "البرمجة بلغات متعددة (Python, Scratch, JavaScript)",
-    "تصميم وبناء الروبوتات",
-    "تطوير التطبيقات والألعاب",
-    "التفكير المنطقي وحل المشكلات",
-    "العمل الجماعي والقيادة",
-    "الإبداع والابتكار التقني"
+    { titleAr: "تفكير منطقي", titleEn: "Logical Thinking", description: "تطوير القدرة على التحليل والتفكير المنطقي السليم" },
+    { titleAr: "مهارات حل المشكلات", titleEn: "Problem Solving", description: "تعلم كيفية تحليل المشاكل وايجاد حلول إبداعية" },
+    { titleAr: "أساسيات البرمجة", titleEn: "Programming Basics", description: "إتقان أسس البرمجة باستخدام لغات مختلفة" },
+    { titleAr: "إنشاء ألعاب", titleEn: "Game Development", description: "تطوير ألعاب تفاعلية باستخدام محركات حديثة" },
+    { titleAr: "العمل على تطبيقات", titleEn: "App Development", description: "بناء تطبيقات موبايل وويب احترافية" },
+    { titleAr: "بناء مشاريع كاملة", titleEn: "Complete Projects", description: "تنفيذ مشاريع متكاملة من البداية إلى النهاية" }
   ];
 
   return (
@@ -103,21 +103,18 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12" data-testid="text-outcomes-title">
             ماذا سيتعلم طفلك؟
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {learningOutcomes.map((outcome, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 p-4 rounded-lg bg-card border"
-                  data-testid={`item-outcome-${index}`}
-                >
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold">
-                    {index + 1}
-                  </div>
-                  <p>{outcome}</p>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {learningOutcomes.map((outcome, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow" data-testid={`card-learning-${index}`}>
+                <CardHeader>
+                  <CardTitle className="text-lg mb-2">{outcome.titleAr}</CardTitle>
+                  <p className="text-sm text-primary font-medium ltr">{outcome.titleEn}</p>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">{outcome.description}</CardDescription>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
