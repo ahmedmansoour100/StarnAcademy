@@ -118,9 +118,23 @@ export default function Courses() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">وسائل الدفع المتاحة</h2>
-          <div className="flex gap-8 justify-center items-center flex-wrap">
-            <div className="text-lg font-semibold">InstaPay</div>
-            <div className="text-lg font-semibold">Vodafone Cash</div>
+          <div className="flex gap-8 justify-center items-center flex-wrap mb-6">
+            <div className="flex items-center gap-2 text-lg font-semibold" data-testid="payment-method-instapay">
+              <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="InstaPay">
+                <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+              </svg>
+              <span>InstaPay</span>
+            </div>
+            <div className="flex items-center gap-2 text-lg font-semibold" data-testid="payment-method-vodafone">
+              <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Vodafone Cash">
+                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+              </svg>
+              <span>Vodafone Cash</span>
+            </div>
+          </div>
+          <div className="mt-4 p-4 bg-card rounded-lg inline-block">
+            <p className="text-sm text-muted-foreground mb-2">رقم الدفع:</p>
+            <p className="text-2xl font-bold text-primary" dir="ltr" data-testid="text-payment-number">01029808287</p>
           </div>
           <p className="mt-6 text-muted-foreground">
             يمكنك الدفع بسهولة من خلال أي من الوسائل المتاحة

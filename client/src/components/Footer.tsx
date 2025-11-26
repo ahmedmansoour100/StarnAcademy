@@ -1,6 +1,16 @@
 export function Footer() {
   const whatsappNumber = "01142965661";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  
+  const partners = [
+    "A+",
+    "Google Developer Groups",
+    "Codex",
+    "Byte Force",
+    "Business Partners",
+    "Tracky",
+    "Starn Startups"
+  ];
 
   return (
     <footer className="bg-card border-t mt-20">
@@ -41,6 +51,21 @@ export function Footer() {
                 <a href="/contact" className="text-muted-foreground hover:text-primary">نموذج التواصل</a>
               </li>
             </ul>
+          </div>
+        </div>
+        
+        <div className="border-t mt-8 pt-8">
+          <h3 className="text-lg font-bold text-center mb-6">شركاؤنا</h3>
+          <div className="flex flex-wrap justify-center gap-6 text-muted-foreground">
+            {partners.map((partner, index) => (
+              <div 
+                key={index} 
+                className="text-sm font-medium hover:text-primary transition-colors"
+                data-testid={`text-partner-${index}`}
+              >
+                {partner}
+              </div>
+            ))}
           </div>
         </div>
         

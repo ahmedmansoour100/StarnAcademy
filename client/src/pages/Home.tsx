@@ -8,28 +8,34 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   const features = [
     {
-      title: "تعلم عملي",
-      description: "نركز على المشاريع العملية التي تطبق ما تعلمه الطلاب"
+      titleAr: "منهج مناسب للعمر",
+      titleEn: "Age-Appropriate Curriculum",
+      description: "محتوى تعليمي مصمم خصيصًا ليناسب كل فئة عمرية"
     },
     {
-      title: "مدربون محترفون",
-      description: "فريق من المدربين المتخصصين ذوي الخبرة في التعليم التقني"
+      titleAr: "فصول صغيرة",
+      titleEn: "Small Classes",
+      description: "مجموعات صغيرة لضمان اهتمام فردي بكل طالب"
     },
     {
-      title: "مناهج حديثة",
-      description: "محتوى تعليمي يواكب أحدث التقنيات والأدوات"
+      titleAr: "تعلم قائم على المشاريع",
+      titleEn: "Project-Based Learning",
+      description: "نركز على المشاريع العملية التي تطبق المهارات المكتسبة"
     },
     {
-      title: "بيئة محفزة",
-      description: "مساحة آمنة تشجع على الإبداع والابتكار"
+      titleAr: "جدولة مرنة",
+      titleEn: "Flexible Scheduling",
+      description: "أوقات متعددة تناسب جدول العائلة"
     },
     {
-      title: "شهادات معتمدة",
-      description: "شهادات إتمام لكل دورة يجتازها الطالب"
+      titleAr: "أدوات احترافية",
+      titleEn: "Professional Tools",
+      description: "نستخدم أحدث الأدوات والتقنيات في التعليم"
     },
     {
-      title: "متابعة مستمرة",
-      description: "تقييم دوري وتقارير مفصلة لأولياء الأمور"
+      titleAr: "تتبع التقدم",
+      titleEn: "Progress Tracking",
+      description: "تقارير دورية ومتابعة مستمرة لتطور كل طالب"
     }
   ];
 
@@ -74,13 +80,14 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12" data-testid="text-why-choose-title">
-            لماذا تختار Starn Academy؟
+            لماذا تختار أكاديمية ستارن؟
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <Card key={index} data-testid={`card-feature-${index}`}>
                 <CardHeader>
-                  <CardTitle>{feature.title}</CardTitle>
+                  <CardTitle className="mb-2">{feature.titleAr}</CardTitle>
+                  <p className="text-sm text-primary font-medium ltr">{feature.titleEn}</p>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base">{feature.description}</CardDescription>
