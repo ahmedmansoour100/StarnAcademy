@@ -34,6 +34,11 @@
   --color-starn-blue: hsl(221 83% 53%);
   --color-starn-yellow: hsl(45 93% 47%);
   --color-starn-dark: hsl(222 47% 11%);
+  --color-starn-teal: hsl(166 78% 57%); /* Turquoise/Teal */
+  --color-starn-red: hsl(0 90% 68%); /* Coral Red */
+  --color-starn-purple: hsl(270 63% 59%); /* Vibrant Purple */
+  --color-starn-cyan: hsl(188 94% 50%); /* Cyan */
+  --color-starn-light-blue: hsl(207 90% 59%); /* Light Blue */
   
   --font-sans: 'Cairo', 'Inter', sans-serif; /* Arabic primary, English secondary */
   --font-mono: 'JetBrains Mono', monospace;

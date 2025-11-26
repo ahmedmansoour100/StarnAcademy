@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AITutor } from "@/components/AITutor";
 import { Footer } from "@/components/Footer";
+import { ShapePattern, RoundedSquare, Circle, HalfCircle, Star } from "@/components/ShapeDecorator";
 
 export default function Home() {
   const features = [
@@ -55,9 +56,30 @@ export default function Home() {
       <WhatsAppButton />
       <AITutor />
 
-      <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-br from-primary via-accent to-secondary overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-20"></div>
+      <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-br from-[#0052CC] via-[#1E40AF] to-[#0052CC] overflow-hidden">
+        <ShapePattern />
+        {/* Decorative shapes */}
+        <div className="absolute top-12 left-12 w-20 h-20">
+          <RoundedSquare color="#1ABC9C" className="w-full h-full rounded-xl" />
+        </div>
+        <div className="absolute top-1/4 right-16 w-12 h-12">
+          <Circle color="#00D4FF" className="w-full h-full opacity-80" />
+        </div>
+        <div className="absolute bottom-24 right-32 w-32 h-16">
+          <HalfCircle color="#FF6B6B" className="w-full h-full opacity-70" />
+        </div>
+        <div className="absolute bottom-12 left-1/4 w-24 h-24">
+          <Star color="#9B59B6" className="w-full h-full opacity-80" />
+        </div>
         <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="mb-6 flex justify-center">
+            <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(50, 50)">
+                <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
+                <polygon points="-15,-5 15,-5 0,15" fill="#0052CC"/>
+              </g>
+            </svg>
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" data-testid="text-hero-title">
             نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
           </h1>
@@ -85,17 +107,25 @@ export default function Home() {
             لماذا تختار أكاديمية ستارن؟
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <Card key={index} data-testid={`card-feature-${index}`}>
-                <CardHeader>
-                  <CardTitle className="mb-2">{feature.titleAr}</CardTitle>
-                  <p className="text-sm text-primary font-medium ltr">{feature.titleEn}</p>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{feature.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+            {features.map((feature, index) => {
+              const colors = ["#1ABC9C", "#3498DB", "#FF6B6B", "#9B59B6", "#FCD34D", "#00D4FF"];
+              return (
+                <Card
+                  key={index}
+                  className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                  data-testid={`card-feature-${index}`}
+                  style={{ borderTop: `4px solid ${colors[index % colors.length]}` }}
+                >
+                  <CardHeader>
+                    <CardTitle className="mb-2">{feature.titleAr}</CardTitle>
+                    <p className="text-sm text-primary font-medium ltr">{feature.titleEn}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">{feature.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -106,17 +136,38 @@ export default function Home() {
             ماذا سيتعلم طفلك؟
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {learningOutcomes.map((outcome, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow" data-testid={`card-learning-${index}`}>
-                <CardHeader>
-                  <CardTitle className="text-lg mb-2">{outcome.titleAr}</CardTitle>
-                  <p className="text-sm text-primary font-medium ltr">{outcome.titleEn}</p>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{outcome.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+            {learningOutcomes.map((outcome, index) => {
+              const shapeColors = ["#1ABC9C", "#3498DB", "#FF6B6B", "#9B59B6", "#FCD34D", "#00D4FF"];
+              const bgGradients = [
+                "from-teal-50 to-white",
+                "from-blue-50 to-white",
+                "from-red-50 to-white",
+                "from-purple-50 to-white",
+                "from-yellow-50 to-white",
+                "from-cyan-50 to-white"
+              ];
+              return (
+                <Card
+                  key={index}
+                  className={`bg-gradient-to-br ${bgGradients[index]} border-0 shadow-lg hover:shadow-2xl transition-all duration-300`}
+                  data-testid={`card-learning-${index}`}
+                >
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div
+                        className="w-4 h-4 rounded-full"
+                        style={{ backgroundColor: shapeColors[index] }}
+                      />
+                      <CardTitle className="text-lg">{outcome.titleAr}</CardTitle>
+                    </div>
+                    <p className="text-sm text-primary font-medium ltr">{outcome.titleEn}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">{outcome.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
