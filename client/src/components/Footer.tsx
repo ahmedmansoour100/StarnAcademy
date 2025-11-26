@@ -56,16 +56,19 @@ export function Footer() {
         
         <div className="border-t mt-8 pt-8">
           <h3 className="text-lg font-bold text-center mb-6">شركاؤنا</h3>
-          <div className="flex flex-wrap justify-center gap-6 text-muted-foreground">
-            {partners.map((partner, index) => (
-              <div 
-                key={index} 
-                className="text-sm font-medium hover:text-primary transition-colors"
-                data-testid={`text-partner-${index}`}
-              >
-                {partner}
-              </div>
-            ))}
+          <div className="flex flex-wrap justify-center gap-4 text-muted-foreground">
+            {partners.map((partner, index) => {
+              const colors = ["bg-blue-500", "bg-green-500", "bg-red-500", "bg-purple-500", "bg-yellow-500", "bg-cyan-500"];
+              return (
+                <div 
+                  key={index} 
+                  className={`px-4 py-2 rounded-full font-medium text-white text-sm ${colors[index % colors.length]} hover:shadow-lg transition-all duration-300 hover:scale-110`}
+                  data-testid={`text-partner-${index}`}
+                >
+                  {partner}
+                </div>
+              );
+            })}
           </div>
         </div>
         

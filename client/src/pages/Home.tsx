@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AITutor } from "@/components/AITutor";
 import { Footer } from "@/components/Footer";
+import { PartnersSection } from "@/components/PartnersSection";
 import { ShapePattern, RoundedSquare, Circle, HalfCircle, Star } from "@/components/ShapeDecorator";
 
 export default function Home() {
@@ -187,6 +188,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <PartnersSection />
 
       <Footer />
     </div>
