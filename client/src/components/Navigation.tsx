@@ -25,7 +25,15 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer" data-testid="link-home-logo">
-              <div className="text-2xl font-bold text-primary">Starn Academy</div>
+              <svg className="w-10 h-10" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                {/* Diamond background */}
+                <g transform="translate(50, 50)">
+                  <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
+                  {/* Black triangle pointing down */}
+                  <polygon points="-15,-5 15,-5 0,15" fill="#1F2937"/>
+                </g>
+              </svg>
+              <span className="text-lg font-bold text-primary hidden sm:inline">Starn Academy</span>
             </div>
           </Link>
 
@@ -65,7 +73,15 @@ export function Navigation() {
               <DrawerContent className="h-full w-[280px] right-0 left-auto">
                 <div className="flex flex-col h-full p-6">
                   <div className="flex items-center justify-between mb-8">
-                    <div className="text-xl font-bold text-primary">Starn Academy</div>
+                    <div className="flex items-center gap-2">
+                      <svg className="w-8 h-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(50, 50)">
+                          <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
+                          <polygon points="-15,-5 15,-5 0,15" fill="#1F2937"/>
+                        </g>
+                      </svg>
+                      <span className="text-xl font-bold text-primary">Starn Academy</span>
+                    </div>
                     <Button
                       variant="ghost"
                       size="icon"
