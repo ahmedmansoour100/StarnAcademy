@@ -58,13 +58,10 @@ export function PartnersSection() {
     },
     {
       name: "Starn Startups",
-      description: "برنامج دعم الشركات الناشئة",
+      description: "شركة تقوم علي انشاء المشاريع وجعل افكار الاطفال حقيقه",
       color: "from-teal-500 to-cyan-500",
       icon: (
-        <svg className="w-12 h-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 50 25 L 75 65 L 25 65 Z" fill="currentColor"/>
-          <circle cx="50" cy="50" r="8" fill="white"/>
-        </svg>
+        <img src="/starnstartups-logo.png" alt="Starn Startups" className="w-12 h-12 object-contain" />
       ),
     },
   ];
