@@ -71,7 +71,7 @@ export function AITutor() {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <Button
-          className="fixed bottom-24 left-6 z-50 rounded-full w-16 h-16 p-0 shadow-lg border-0"
+          className="fixed bottom-6 left-6 z-50 rounded-full w-28 h-28 p-0 shadow-2xl border-0 hover:shadow-3xl transition-shadow"
           data-testid="button-ai-tutor"
         >
           <img 
