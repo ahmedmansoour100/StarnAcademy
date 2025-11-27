@@ -129,11 +129,11 @@ export default function Courses() {
             <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold">
-                  م
+                  محمد
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">ولي أمر</h4>
-                  <p className="text-sm text-muted-foreground">والد طالب</p>
+                  <h4 className="font-semibold text-lg">محمد الليبي</h4>
+                  <p className="text-sm text-muted-foreground">والد محمود محمد</p>
                 </div>
               </div>
               <p className="text-foreground mb-4 leading-relaxed">
@@ -148,11 +148,11 @@ export default function Courses() {
             <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-white font-bold">
-                  ع
+                  حنان
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">ولي أمر</h4>
-                  <p className="text-sm text-muted-foreground">والد طالب</p>
+                  <h4 className="font-semibold text-lg">الأستاذة حنان السحلي</h4>
+                  <p className="text-sm text-muted-foreground">والدة خالد ومريم</p>
                 </div>
               </div>
               <p className="text-foreground mb-4 leading-relaxed">
@@ -167,11 +167,11 @@ export default function Courses() {
             <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-white font-bold">
-                  ح
+                  عصام
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">ولي أمر</h4>
-                  <p className="text-sm text-muted-foreground">والد طالب</p>
+                  <h4 className="font-semibold text-lg">عصام ماهر</h4>
+                  <p className="text-sm text-muted-foreground">والد محمد عصام</p>
                 </div>
               </div>
               <p className="text-foreground mb-4 leading-relaxed">
@@ -186,11 +186,11 @@ export default function Courses() {
             <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">
-                  س
+                  آلاء
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">والدة سليم</h4>
-                  <p className="text-sm text-muted-foreground">والدة طالب</p>
+                  <h4 className="font-semibold text-lg">الأستاذة آلاء</h4>
+                  <p className="text-sm text-muted-foreground">والدة سليم عباس</p>
                 </div>
               </div>
               <p className="text-foreground mb-4 leading-relaxed">
