@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "+2001142965661";
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  const whatsappNumber = "01142965661";
+  const whatsappLink = `https://wa.me/+201142965661`;
 
   return (
     <a
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 left-6 z-50"
+      className="fixed bottom-6 right-6 z-50"
       data-testid="link-whatsapp"
     >
       <Button
         size="lg"
-        className="rounded-full w-16 h-16 bg-[#25D366] hover:bg-[#20BD5A] shadow-lg"
+        className="rounded-full w-28 h-28 bg-[#25D366] hover:bg-[#20BD5A] shadow-2xl hover:shadow-3xl transition-shadow"
         data-testid="button-whatsapp"
       >
         <svg
-          className="w-8 h-8"
+          className="w-14 h-14"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
