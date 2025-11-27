@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 import WhatsApp_Image_2025_11_27_at_02_01_55_430675a8 from "@assets/WhatsApp Image 2025-11-27 at 02.01.55_430675a8.jpg";
 
+import WhatsApp_Image_2025_11_27_at_02_01_33_4e18a039 from "@assets/WhatsApp Image 2025-11-27 at 02.01.33_4e18a039.jpg";
+
 export default function Trainers() {
   const trainers = [
     {
@@ -56,7 +58,7 @@ export default function Trainers() {
               <Card key={trainer.id} className="overflow-hidden" data-testid={`card-trainer-${index}`}>
                 <div className="h-64 overflow-hidden">
                   <img
-                    src={WhatsApp_Image_2025_11_27_at_02_01_55_430675a8}
+                    src={WhatsApp_Image_2025_11_27_at_02_01_33_4e18a039}
                     alt={trainer.name}
                     className="w-full h-full object-cover"
                   />
