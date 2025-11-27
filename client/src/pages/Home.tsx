@@ -74,19 +74,19 @@ export default function Home() {
           <Star color="#9B59B6" className="w-full h-full opacity-80" />
         </div>
         <div className="container mx-auto px-4 relative z-10 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-6 gap-24 items-center">
             {/* Left side - Image */}
-            <div className="flex justify-center lg:col-span-3">
+            <div className="flex justify-center lg:col-span-4">
               <img 
                 src="/classroom-1.png" 
                 alt="فصل تعليمي 1" 
-                className="rounded-2xl shadow-2xl max-w-full h-auto w-full scale-110"
+                className="rounded-2xl shadow-2xl max-w-full h-auto w-full scale-150"
                 data-testid="img-classroom-1"
               />
             </div>
 
             {/* Right side - Text content */}
-            <div className="text-center lg:col-span-2 lg:pl-12">
+            <div className="text-center lg:col-span-2 lg:pl-16">
               <div className="mb-6 flex justify-center">
                 <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <g transform="translate(50, 50)">
