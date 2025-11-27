@@ -50,15 +50,10 @@ export function PartnersSection() {
     },
     {
       name: "Business Partners",
-      description: "شركاء الأعمال الاستراتيجيين",
+      description: "شركة بتعمل خطة علمية وممنهجة لعمل حلول والنهوض بالشركات",
       color: "from-amber-500 to-orange-500",
       icon: (
-        <svg className="w-12 h-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <rect x="20" y="30" width="25" height="35" fill="currentColor" rx="3"/>
-          <rect x="55" y="30" width="25" height="35" fill="currentColor" rx="3"/>
-          <circle cx="32" cy="25" r="6" fill="currentColor"/>
-          <circle cx="67" cy="25" r="6" fill="currentColor"/>
-        </svg>
+        <img src="/businesspartners-logo.png" alt="Business Partners" className="w-12 h-12 object-contain" />
       ),
     },
     {
