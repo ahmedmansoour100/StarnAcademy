@@ -13,15 +13,10 @@ export function PartnersSection() {
   const partners: Partner[] = [
     {
       name: "Google Developer Groups",
-      description: "برنامج تطوير برامج Google",
+      description: "نشاط طلابي هدفه ارتقاء بالمعايير التعليمية بمساعدة جوجل",
       color: "from-blue-500 via-red-500 to-yellow-500",
       icon: (
-        <svg className="w-12 h-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="30" cy="35" r="15" fill="#4285F4"/>
-          <path d="M 60 35 Q 60 20 75 20 Q 80 20 83 25 L 65 40" fill="#EA4335"/>
-          <circle cx="70" cy="55" r="15" fill="#34A853"/>
-          <path d="M 30 60 L 45 50 Q 50 48 55 50 L 40 65" fill="#FBBC04"/>
-        </svg>
+        <img src="/googledevelopers-logo.png" alt="Google Developer Groups" className="w-12 h-12 object-contain" />
       ),
     },
     {
