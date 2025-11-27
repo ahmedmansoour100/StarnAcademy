@@ -71,13 +71,13 @@ export function AITutor() {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <Button
-          className="fixed bottom-6 left-6 z-50 rounded-full w-28 h-28 p-0 shadow-2xl border-0 hover:shadow-3xl transition-shadow"
+          className="fixed bottom-24 left-6 z-50 rounded-full w-16 h-16 p-0 shadow-lg border-0 hover:shadow-xl transition-shadow overflow-hidden"
           data-testid="button-ai-tutor"
         >
           <img 
             src="/aitutor-logo.jpg" 
             alt="AI-Tutor" 
-            className="w-full h-full object-cover rounded-full"
+            className="w-full h-full object-contain scale-125"
           />
         </Button>
       </DrawerTrigger>
