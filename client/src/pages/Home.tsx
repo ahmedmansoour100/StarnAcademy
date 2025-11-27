@@ -73,51 +73,32 @@ export default function Home() {
         <div className="absolute bottom-12 left-1/4 w-24 h-24">
           <Star color="#9B59B6" className="w-full h-full opacity-80" />
         </div>
-        <div className="container mx-auto px-4 relative z-10 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-6 gap-48 items-center">
-            {/* Left side - Text content */}
-            <div className="text-center lg:col-span-2 lg:order-last">
-              <div className="mb-6 flex justify-center">
-                <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <g transform="translate(50, 50)">
-                    <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
-                    <polygon points="-15,-5 15,-5 0,15" fill="#0052CC"/>
-                  </g>
-                </svg>
-              </div>
-              <h1 className="text-6xl md:text-8xl font-bold text-white mb-12 leading-loose" data-testid="text-hero-title">
-                نحن لا<br />
-                نعلم البرمجة<br />
-                فقط، بل<br />
-                نبني مبتكري<br />
-                الغد
-              </h1>
-              <p className="text-2xl md:text-3xl text-white/90 mb-12 ltr leading-loose" data-testid="text-hero-subtitle">
-                We Don't Just Teach Coding, We Build Tomorrow's Innovators
-              </p>
-              <div className="flex gap-4 justify-center flex-wrap">
-                <Link href="/courses">
-                  <Button size="lg" variant="secondary" data-testid="button-hero-courses">
-                    استكشف دوراتنا
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white" data-testid="button-hero-contact">
-                    تواصل معنا
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Right side - Image */}
-            <div className="flex justify-center lg:col-span-4 lg:order-first">
-              <img 
-                src="/classroom-1.png" 
-                alt="فصل تعليمي 1" 
-                className="rounded-2xl shadow-2xl max-w-full h-auto w-full scale-100"
-                data-testid="img-classroom-1"
-              />
-            </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="mb-6 flex justify-center">
+            <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(50, 50)">
+                <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
+                <polygon points="-15,-5 15,-5 0,15" fill="#0052CC"/>
+              </g>
+            </svg>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" data-testid="text-hero-title">
+            نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 ltr" data-testid="text-hero-subtitle">
+            We Don't Just Teach Coding, We Build Tomorrow's Innovators
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link href="/courses">
+              <Button size="lg" variant="secondary" data-testid="button-hero-courses">
+                استكشف دوراتنا
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white" data-testid="button-hero-contact">
+                تواصل معنا
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
