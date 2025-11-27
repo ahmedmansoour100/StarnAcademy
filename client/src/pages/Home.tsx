@@ -6,6 +6,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AITutor } from "@/components/AITutor";
 import { Footer } from "@/components/Footer";
 import { PartnersSection } from "@/components/PartnersSection";
+import { CertificateSection } from "@/components/CertificateSection";
 import { ShapePattern, RoundedSquare, Circle, HalfCircle, Star } from "@/components/ShapeDecorator";
 
 export default function Home() {
@@ -190,6 +191,8 @@ export default function Home() {
       </section>
 
       <PartnersSection />
+
+      <CertificateSection />
 
       <Footer />
     </div>
