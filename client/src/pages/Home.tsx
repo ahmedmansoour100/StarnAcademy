@@ -86,7 +86,11 @@ export default function Home() {
                 </svg>
               </div>
               <h1 className="text-6xl md:text-8xl font-bold text-white mb-12 leading-loose" data-testid="text-hero-title">
-                نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
+                نحن لا<br />
+                نعلم البرمجة<br />
+                فقط، بل<br />
+                نبني مبتكري<br />
+                الغد
               </h1>
               <p className="text-2xl md:text-3xl text-white/90 mb-12 ltr leading-loose" data-testid="text-hero-subtitle">
                 We Don't Just Teach Coding, We Build Tomorrow's Innovators
