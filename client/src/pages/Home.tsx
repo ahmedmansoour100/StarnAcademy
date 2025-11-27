@@ -58,7 +58,7 @@ export default function Home() {
       <WhatsAppButton />
       <AITutor />
 
-      <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-br from-[#0052CC] via-[#1E40AF] to-[#0052CC] overflow-hidden">
+      <section className="relative min-h-[600px] flex items-center justify-center bg-gradient-to-br from-[#0052CC] via-[#1E40AF] to-[#0052CC] overflow-hidden">
         <ShapePattern />
         {/* Decorative shapes */}
         <div className="absolute top-12 left-12 w-20 h-20">
@@ -73,32 +73,50 @@ export default function Home() {
         <div className="absolute bottom-12 left-1/4 w-24 h-24">
           <Star color="#9B59B6" className="w-full h-full opacity-80" />
         </div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="mb-6 flex justify-center">
-            <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <g transform="translate(50, 50)">
-                <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
-                <polygon points="-15,-5 15,-5 0,15" fill="#0052CC"/>
-              </g>
-            </svg>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" data-testid="text-hero-title">
-            نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 ltr" data-testid="text-hero-subtitle">
-            We Don't Just Teach Coding, We Build Tomorrow's Innovators
-          </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/courses">
-              <Button size="lg" variant="secondary" data-testid="button-hero-courses">
-                استكشف دوراتنا
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white" data-testid="button-hero-contact">
-                تواصل معنا
-              </Button>
-            </Link>
+        <div className="container mx-auto px-4 relative z-10 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Left side - Text content */}
+            <div className="text-center lg:text-right">
+              <div className="mb-6 flex justify-center lg:justify-end">
+                <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(50, 50)">
+                    <polygon points="0,-40 40,0 0,40 -40,0" fill="#FCD34D" stroke="#FCD34D" strokeWidth="2"/>
+                    <polygon points="-15,-5 15,-5 0,15" fill="#0052CC"/>
+                  </g>
+                </svg>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" data-testid="text-hero-title">
+                نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
+              </h1>
+              <p className="text-lg md:text-xl text-white/90 mb-8 ltr" data-testid="text-hero-subtitle">
+                We Don't Just Teach Coding, We Build Tomorrow's Innovators
+              </p>
+              <div className="flex gap-4 justify-center lg:justify-end flex-wrap">
+                <Link href="/courses">
+                  <Button size="lg" variant="secondary" data-testid="button-hero-courses">
+                    استكشف دوراتنا
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white" data-testid="button-hero-contact">
+                    تواصل معنا
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right side - Images carousel */}
+            <div className="relative h-[400px] lg:h-[500px]">
+              <div className="grid grid-cols-1 gap-4 h-full">
+                <img 
+                  src="/classroom-1.png" 
+                  alt="فصل تعليمي 1" 
+                  className="w-full h-full object-cover rounded-2xl shadow-2xl"
+                  data-testid="img-classroom-1"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-2xl pointer-events-none border-4 border-white/20"></div>
+            </div>
           </div>
         </div>
       </section>
