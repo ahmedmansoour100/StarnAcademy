@@ -74,7 +74,7 @@ export default function Home() {
           <Star color="#9B59B6" className="w-full h-full opacity-80" />
         </div>
         <div className="container mx-auto px-4 relative z-10 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-6 gap-32 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-6 gap-48 items-center">
             {/* Left side - Text content */}
             <div className="text-center lg:col-span-2 lg:order-last">
               <div className="mb-6 flex justify-center">
