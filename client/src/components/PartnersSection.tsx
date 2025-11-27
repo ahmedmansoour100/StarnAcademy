@@ -26,12 +26,10 @@ export function PartnersSection() {
     },
     {
       name: "Codex",
-      description: "منصة تطوير مشاريع",
+      description: "شركة تقدم دعم فني للشركات",
       color: "from-slate-700 to-slate-900",
       icon: (
-        <svg className="w-12 h-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <text x="50" y="65" fontSize="60" fontWeight="bold" textAnchor="middle" fill="currentColor">&lt; &gt;</text>
-        </svg>
+        <img src="/codex-logo.png" alt="Codex" className="w-12 h-12 object-contain" />
       ),
     },
     {
