@@ -77,7 +77,7 @@ export function AITutor() {
           <img 
             src="/aitutor-logo.jpg" 
             alt="AI-Tutor" 
-            className="w-full h-full object-contain scale-125"
+            className="w-full h-full object-cover scale-150"
           />
         </Button>
       </DrawerTrigger>
