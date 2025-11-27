@@ -170,7 +170,7 @@ export default function Courses() {
                   عصام
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">م/ عصام ماهر</h4>
+                  <h4 className="font-semibold text-lg">م/ حبيبي عصام ماهر</h4>
                   <p className="text-sm text-muted-foreground">والد محمد عصام</p>
                 </div>
               </div>
