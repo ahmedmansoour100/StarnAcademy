@@ -14,11 +14,11 @@ export function WhatsAppButton() {
     >
       <Button
         size="lg"
-        className="rounded-full w-28 h-28 bg-[#25D366] hover:bg-[#20BD5A] shadow-2xl hover:shadow-3xl transition-shadow"
+        className="rounded-full w-16 h-16 bg-[#25D366] hover:bg-[#20BD5A] shadow-lg hover:shadow-xl transition-shadow"
         data-testid="button-whatsapp"
       >
         <svg
-          className="w-14 h-14"
+          className="w-12 h-12"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
