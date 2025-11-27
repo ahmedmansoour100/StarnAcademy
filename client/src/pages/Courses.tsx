@@ -132,7 +132,7 @@ export default function Courses() {
                   محمد
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">محمد الليبي</h4>
+                  <h4 className="font-semibold text-lg">دكتور محمد الليبي</h4>
                   <p className="text-sm text-muted-foreground">والد محمود محمد</p>
                 </div>
               </div>
@@ -170,7 +170,7 @@ export default function Courses() {
                   عصام
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">عصام ماهر</h4>
+                  <h4 className="font-semibold text-lg">م/ عصام ماهر</h4>
                   <p className="text-sm text-muted-foreground">والد محمد عصام</p>
                 </div>
               </div>
