@@ -74,9 +74,9 @@ export default function Home() {
           <Star color="#9B59B6" className="w-full h-full opacity-80" />
         </div>
         <div className="container mx-auto px-4 relative z-10 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-20 items-center">
             {/* Left side - Image */}
-            <div className="flex justify-center lg:col-span-1">
+            <div className="flex justify-center lg:col-span-2">
               <img 
                 src="/classroom-1.png" 
                 alt="فصل تعليمي 1" 
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             {/* Right side - Text content */}
-            <div className="text-center lg:col-span-2">
+            <div className="text-center lg:col-span-2 lg:pl-8">
               <div className="mb-6 flex justify-center">
                 <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <g transform="translate(50, 50)">
