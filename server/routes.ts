@@ -17,7 +17,7 @@ export async function registerRoutes(
       // Send to Google Sheets
       await appendEnrollmentToSheet({
         childName: validatedData.childName,
-        childAge: validatedData.childAge,
+        childAge: parseInt(validatedData.childAge?.toString() || "0"),
         schoolType: validatedData.schoolType,
         location: validatedData.location,
         parentName: validatedData.parentName,
