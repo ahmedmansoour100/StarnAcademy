@@ -85,10 +85,10 @@ export default function Home() {
                   </g>
                 </svg>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" data-testid="text-hero-title">
+              <h1 className="text-6xl md:text-8xl font-bold text-white mb-6" data-testid="text-hero-title">
                 نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 ltr" data-testid="text-hero-subtitle">
+              <p className="text-2xl md:text-3xl text-white/90 mb-8 ltr" data-testid="text-hero-subtitle">
                 We Don't Just Teach Coding, We Build Tomorrow's Innovators
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
@@ -110,7 +110,7 @@ export default function Home() {
               <img 
                 src="/classroom-1.png" 
                 alt="فصل تعليمي 1" 
-                className="rounded-2xl shadow-2xl max-w-full h-auto w-full scale-150"
+                className="rounded-2xl shadow-2xl max-w-full h-auto w-full scale-100"
                 data-testid="img-classroom-1"
               />
             </div>
