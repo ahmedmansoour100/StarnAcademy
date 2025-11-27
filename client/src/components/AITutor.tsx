@@ -71,20 +71,14 @@ export function AITutor() {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <Button
-          className="fixed bottom-24 left-6 z-50 rounded-full w-16 h-16 bg-gradient-to-br from-[#1E40AF] to-[#1F3A93] hover:from-[#1E3BA0] hover:to-[#1F3A82] shadow-lg"
+          className="fixed bottom-24 left-6 z-50 rounded-full w-16 h-16 p-0 shadow-lg border-0"
           data-testid="button-ai-tutor"
         >
-          <svg
-            className="w-8 h-8 text-white"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {/* AI Hexagon Icon */}
-            <path d="M12 2L20.5 6.5V15.5L12 20L3.5 15.5V6.5L12 2M12 8L16 10.5V15L12 17L8 15V10.5L12 8M11 11H13V13H11V11Z" fill="currentColor" />
-            {/* Yellow accent */}
-            <circle cx="17" cy="9" r="2" fill="#FCD34D" />
-          </svg>
+          <img 
+            src="/aitutor-logo.jpg" 
+            alt="AI-Tutor" 
+            className="w-full h-full object-cover rounded-full"
+          />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="h-[80vh] flex flex-col">
