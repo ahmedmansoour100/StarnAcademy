@@ -42,15 +42,10 @@ export function PartnersSection() {
     },
     {
       name: "Byte Force",
-      description: "حلول تقنية متقدمة",
+      description: "شركة تقدم دعم وحلول للشركات",
       color: "from-indigo-600 to-blue-600",
       icon: (
-        <svg className="w-12 h-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <rect x="25" y="25" width="20" height="20" fill="currentColor" rx="3"/>
-          <rect x="55" y="25" width="20" height="20" fill="currentColor" rx="3"/>
-          <rect x="25" y="55" width="20" height="20" fill="currentColor" rx="3"/>
-          <rect x="55" y="55" width="20" height="20" fill="currentColor" rx="3"/>
-        </svg>
+        <img src="/byteforce-logo.png" alt="Byte Force" className="w-12 h-12 object-contain" />
       ),
     },
     {
