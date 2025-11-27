@@ -115,6 +115,95 @@ export default function Courses() {
         </div>
       </section>
 
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4" data-testid="text-parent-testimonials">
+            آراء أولياء الأمور في الدورات
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
+            اكتشف ما يقوله أولياء الأمور عن تجاربهم مع برامجنا التعليمية
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Testimonial 1 */}
+            <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold">
+                  م
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg">ولي أمر</h4>
+                  <p className="text-sm text-muted-foreground">والد طالب</p>
+                </div>
+              </div>
+              <p className="text-foreground mb-4 leading-relaxed">
+                "كله تمام والله جديد وجاد بالتسيير وحضرتك مجدد ومتعاطف تعامل مميز"
+              </p>
+              <div className="flex items-center gap-1 text-secondary">
+                ★★★★★
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-white font-bold">
+                  ع
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg">ولي أمر</h4>
+                  <p className="text-sm text-muted-foreground">والد طالب</p>
+                </div>
+              </div>
+              <p className="text-foreground mb-4 leading-relaxed">
+                "حضرتك شخص محترم جدا زيدتك وريينا عالم احنا بشكر فيك وأنا مقدره جدا"
+              </p>
+              <div className="flex items-center gap-1 text-secondary">
+                ★★★★★
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-white font-bold">
+                  ح
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg">ولي أمر</h4>
+                  <p className="text-sm text-muted-foreground">والد طالب</p>
+                </div>
+              </div>
+              <p className="text-foreground mb-4 leading-relaxed">
+                "شكراً على تعب حضرتك معاه، لاحظت تطوراً كبيراً في مستواه وثقته"
+              </p>
+              <div className="flex items-center gap-1 text-secondary">
+                ★★★★★
+              </div>
+            </div>
+
+            {/* Testimonial 4 */}
+            <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">
+                  س
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg">والدة سليم</h4>
+                  <p className="text-sm text-muted-foreground">والدة طالب</p>
+                </div>
+              </div>
+              <p className="text-foreground mb-4 leading-relaxed">
+                "طبعاً سعيده جداً أن سليم برغم سنه الصغير تعلم والحمد لله. بارك الله في حضرتك على الاهتمام والحب"
+              </p>
+              <div className="flex items-center gap-1 text-secondary">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">وسائل الدفع المتاحة</h2>
