@@ -9,16 +9,16 @@ export function WhatsAppButton() {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-36 left-6 z-50"
       data-testid="link-whatsapp"
     >
       <Button
         size="lg"
-        className="rounded-full w-16 h-16 bg-[#25D366] hover:bg-[#20BD5A] shadow-lg hover:shadow-xl transition-shadow"
+        className="rounded-full w-20 h-20 bg-[#25D366] hover:bg-[#20BD5A] shadow-lg hover:shadow-xl transition-shadow p-0 flex items-center justify-center"
         data-testid="button-whatsapp"
       >
         <svg
-          className="w-12 h-12"
+          className="w-16 h-16"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
