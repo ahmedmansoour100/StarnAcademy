@@ -74,6 +74,15 @@ export default function Home() {
           <Star color="#9B59B6" className="w-full h-full opacity-80" />
         </div>
         <div className="container mx-auto px-4 relative z-10 flex items-center gap-12">
+          <div className="flex-1 hidden lg:flex justify-center">
+            <img 
+              src="/classroom-hero.png" 
+              alt="فصل تعليمي" 
+              className="rounded-2xl shadow-2xl max-w-full h-auto"
+              data-testid="img-classroom-hero"
+            />
+          </div>
+          
           <div className="text-center flex-1">
             <div className="mb-6 flex justify-center">
               <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -83,10 +92,10 @@ export default function Home() {
                 </g>
               </svg>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" data-testid="text-hero-title">
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-12 leading-loose" data-testid="text-hero-title">
               نحن لا نعلم البرمجة فقط، بل نبني مبتكري الغد
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 ltr" data-testid="text-hero-subtitle">
+            <p className="text-2xl md:text-3xl text-white/90 mb-12 ltr leading-loose" data-testid="text-hero-subtitle">
               We Don't Just Teach Coding, We Build Tomorrow's Innovators
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
@@ -101,15 +110,6 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-          </div>
-          
-          <div className="flex-1 hidden lg:flex justify-center">
-            <img 
-              src="/classroom-hero.png" 
-              alt="فصل تعليمي" 
-              className="rounded-2xl shadow-2xl max-w-full h-auto"
-              data-testid="img-classroom-hero"
-            />
           </div>
         </div>
       </section>
