@@ -83,7 +83,14 @@ export function AITutor() {
       </DrawerTrigger>
       <DrawerContent className="h-[80vh] flex flex-col">
         <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="text-lg font-bold text-right" data-testid="text-ai-tutor-title">AI-tutor</h2>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/aitutor-logo.jpg" 
+              alt="AI-Tutor" 
+              className="w-10 h-10 rounded-full object-cover"
+            />
+            <h2 className="text-lg font-bold text-right" data-testid="text-ai-tutor-title">AI-tutor</h2>
+          </div>
           <DrawerClose asChild>
             <Button variant="ghost" size="icon" data-testid="button-close-ai">
               <X className="h-4 w-4" />
