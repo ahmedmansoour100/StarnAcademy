@@ -36,13 +36,10 @@ export function PartnersSection() {
     },
     {
       name: "Tracky",
-      description: "تطبيق تتبع المشاريع",
+      description: "نشاط تعليمي طلابي يهدف لوصل الطلاب بسوق العمل",
       color: "from-pink-500 to-rose-500",
       icon: (
-        <svg className="w-12 h-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="3"/>
-          <path d="M 35 50 L 45 60 L 65 40" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+        <img src="/tracky-logo.png" alt="Tracky" className="w-12 h-12 object-contain" />
       ),
     },
     {
