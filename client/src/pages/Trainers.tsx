@@ -3,6 +3,8 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
+import WhatsApp_Image_2025_11_27_at_02_01_55_430675a8 from "@assets/WhatsApp Image 2025-11-27 at 02.01.55_430675a8.jpg";
+
 export default function Trainers() {
   const trainers = [
     {
@@ -37,7 +39,6 @@ export default function Trainers() {
     <div className="min-h-screen bg-background">
       <Navigation />
       <WhatsAppButton />
-
       <section className="py-20 bg-gradient-to-br from-secondary/10 to-primary/10">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold text-center mb-6" data-testid="text-trainers-title">
@@ -48,7 +49,6 @@ export default function Trainers() {
           </p>
         </div>
       </section>
-
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -56,7 +56,7 @@ export default function Trainers() {
               <Card key={trainer.id} className="overflow-hidden" data-testid={`card-trainer-${index}`}>
                 <div className="h-64 overflow-hidden">
                   <img
-                    src={trainer.image}
+                    src={WhatsApp_Image_2025_11_27_at_02_01_55_430675a8}
                     alt={trainer.name}
                     className="w-full h-full object-cover"
                   />
@@ -86,7 +86,6 @@ export default function Trainers() {
           </div>
         </div>
       </section>
-
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">فريق متميز من المحترفين</h2>
@@ -95,7 +94,6 @@ export default function Trainers() {
           </p>
         </div>
       </section>
-
       <Footer />
     </div>
   );
